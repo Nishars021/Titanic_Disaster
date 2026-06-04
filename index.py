@@ -34,3 +34,10 @@ print(test["Embarked"])
 
 #Selecting Features :
 features = ["Pclass","Sex","Age","Embarked","Fare","SibSp","Parch",]
+
+#Prepare X & Y :
+x = train[features]
+y = train["survived"]
+x_test = test[features]
+
+
