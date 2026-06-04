@@ -19,3 +19,7 @@ test = pd.read_csv("test.csv")
 #Filling missing values of Fare
 train["Fare"] = train["Fare"].fillna(train["Fare"].median())
 print(train["Fare"])
+
+#Converting te Text into Numbers as the machines cannot understand Text :
+train["Sex"] = train["Sex"].map({"male":0,"female":1})
+test["Sex"] = test["Sex"].map({"male":0,"female":1})
