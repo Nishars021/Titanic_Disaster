@@ -21,5 +21,9 @@ train["Fare"] = train["Fare"].fillna(train["Fare"].median())
 print(train["Fare"])
 
 #Converting te Text into Numbers as the machines cannot understand Text :
+#(Sex)
 train["Sex"] = train["Sex"].map({"male":0,"female":1})
 test["Sex"] = test["Sex"].map({"male":0,"female":1})
+#(Embarked)
+train["Embarked"] = train["Embarked"].map({"S":0,"C":1,"Q":2})
+test["Embarked"] = test["Embarked"].map({"S":0,"C":1,"Q":2})
