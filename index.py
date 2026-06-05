@@ -12,7 +12,7 @@ train["Age"] = train["Age"].fillna(train["Age"].median())
 test["Age"] = test["Age"].fillna(test["Age"].median())
 print(train["Age"])
 
-Filling missing values of Embarked
+# Filling missing values of Embarked
 train["Embarked"] = train["Embarked"].fillna(train["Embarked"].mode()[0])
 print(train["Embarked"])
 
