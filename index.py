@@ -50,3 +50,6 @@ random_state = 42 #Used to get same answer everytime & '42' just randomly used
 model.fit(X,y) #Learn the pattern
 
 
+#Make Predictions
+predictions = model.predict(X_test)
+print(predictions)
