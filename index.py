@@ -39,9 +39,14 @@ features = ["Pclass","Sex","Age","Embarked","Fare","SibSp","Parch",]
 #Prepare X & Y :
 X = train[features]
 y = train["Survived"]
-x_test = test[features]
+X_test = test[features]
 
 #Train the model
 from sklearn.ensebmle import RandomForstClassifier
-model = RandomForstClassifier 
+model = RandomForstClassifier (
+n_estimators = 100, #Generate 100 trees & understand the pattern
+random_state = 42 #Used to get same answer everytime & '42' just randomly used
+)
+model.fit(X,y) #Learn the pattern
+
 
