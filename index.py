@@ -37,7 +37,7 @@ test["Embarked"] = test["Embarked"].map({"S":0,"C":1,"Q":2})
 features = ["Pclass","Sex","Age","Embarked","Fare","SibSp","Parch",]
 
 #Prepare X & Y :
-x = train[features]
+X = train[features]
 y = train["Survived"]
 x_test = test[features]
 
