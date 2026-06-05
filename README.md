@@ -1,4 +1,5 @@
 🚢 Titanic Survival Prediction using Machine Learning
+
 📌 Project Overview
 
 This project is based on Kaggle's Titanic - Machine Learning from Disaster competition. The objective is to build a machine learning model that predicts whether a passenger survived the Titanic disaster using passenger information such as age, gender, ticket class, fare, and family details.
