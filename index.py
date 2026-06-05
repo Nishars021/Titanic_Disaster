@@ -14,7 +14,7 @@ test["Age"] = test["Age"].fillna(test["Age"].median())
 # print(train["Age"])
 
 # Filling missing values of Embarked
-train["Embarked"] = train["Embarked"].fillna(train["Embarked"].mode()[0])
+train["Embarked"] = train["Embarked"].fillna(train["Embarked"].mode()[0]) #Used 'mode' as it is a category"
 # print(train["Embarked"])
 
 # Filling missing values of Fare
