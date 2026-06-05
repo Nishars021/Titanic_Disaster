@@ -61,4 +61,5 @@ submission = pd.DataFrame({
 
 #Save CSV
 submission.to_csv("submission.csv",index=False)
-
+print(submission.head())
+print("Submission file created successfully..!!!")
