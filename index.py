@@ -41,4 +41,8 @@ x = train[features]
 y = train["Survived"]
 x_test = test[features]
 
+#Train the model
+from sklearn.ensebmle import RandomForstClassifier
+model = RandomForstClassifier
+
 
