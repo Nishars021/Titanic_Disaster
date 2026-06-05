@@ -52,4 +52,13 @@ model.fit(X,y) #Learn the pattern
 
 #Make Predictions
 predictions = model.predict(X_test)
-print(predictions.head())
+
+#Create a submission file
+submission = pd.DataFrame({
+    "PassengerID" : test["PassengerId"],
+    "Survived" : predictions
+})
+
+#Save CSV
+submission.to_csv("submission.csv",index=False)
+
