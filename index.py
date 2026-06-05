@@ -4,8 +4,8 @@ test = pd.read_csv("test.csv")
 print(train.head()) 
 #Loads the first rows to check if those r correct
 print(test.head())
-print(train.info())
-print(train.describe())
+# print(train.info())
+# print(train.describe())
 
 # # Data Cleaning
 # # Filling missing values of Age
